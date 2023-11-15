@@ -249,8 +249,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#indexmd" class="md-nav__link">
+    index.md記述
   </a>
   
 </li>
@@ -316,8 +316,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#indexmd" class="md-nav__link">
+    index.md記述
   </a>
   
 </li>
@@ -344,11 +344,27 @@
 <li><code>mkdocs serve</code> - ローカルで確認</li>
 <li><code>mkdocs build</code> - HTML一式生成</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<h2 id="indexmd">index.md記述</h2>
+<pre><code># ページ名とmdファイルの設定
+nav:
+  - top: index.md
+  - キャラ: character/character_list.md
+
+# デザインの設定
+theme:
+  name: material
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  language: ja
+
+# 検索の言語設定
+extra:
+  search:
+    language: 'jp'
 </code></pre>
 
 
